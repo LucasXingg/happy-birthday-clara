@@ -6,45 +6,41 @@
     <title>Birthday Card</title>
     <style>
         body {
+            width: 100%;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            /* height: 100vh; */
             background-color: #f4f4f4;
         }
         .wrapper {
-            width: 80%
+            width: 100%;
+            max-width: 600px; /* Maximum width for content */
+            box-sizing: border-box;
+            padding: 0 20px; /* Add space on both sides */
+            margin: 0 auto; /* Center the wrapper */
         }
         .card {
-            display: flex;
-            flex-direction: column; /* Layout items vertically */
-            align-items: center;   /* Center items horizontally */
-            width: 100%;
+            display: block;
+            width: 100%; /* Full width of the wrapper */
+            margin: 20px 0; /* Vertical spacing */
             padding: 20px;
-            margin: 10px 30px; /* Space between sections */
-            background-color: #add8e6;
+            background-color: rgb(231, 198, 132);
             border-radius: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            font-family: Arial, sans-serif;
+            font-family: 'Bradley Habd';
             text-align: center;
-        }
-        .section {
-            margin: 10px 30px; /* Space between sections */
-            padding: 30px;
-            background-color: #add8e6;
-            border-radius: 20px;
-            width: 100%; /* Make sections take the full card width */
-            text-align: center;
+            box-sizing: border-box; /* Ensure padding doesn't expand width */
         }
         .header {
-            font-size: 2.5em;
+            /* font-size: 2.5em; */
             font-weight: bold;
-            color: #FFD700;
+            color: #32CD32;
         }
         .subheader {
-            font-size: 2em;
+            /* font-size: 2em; */
             color: #32CD32;
         }
         .video {
@@ -52,7 +48,7 @@
             flex-direction: column; /* Layout items vertically */
             width: 100%;
             /* padding: 20px; */
-            margin: 10px 30px; /* Space between sections */
+            margin: 10px 0; /* Space between sections */
             /* height: auto; Maintain aspect ratio */
             border-radius: 20px; /* Match card's rounded corners */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
@@ -75,7 +71,7 @@
             </video>
         </div> -->
         <video class="video" controls>
-            <source src="/video.mp4" type="video/mp4">
+            <source src="video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
