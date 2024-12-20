@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Birthday Card</title>
     <style>
+        @font-face {
+            font-family: 'BradleyHandITC';
+            src: url('/BRADHITC.TTF') format('truetype');
+        }
+
         body {
             width: 100%;
             margin: 0;
@@ -13,7 +18,7 @@
             justify-content: center;
             align-items: center;
             /* height: 100vh; */
-            background-color: #f4f4f4;
+            background-image: url('background.jpg'); /* Use the image in the root path */
         }
         .wrapper {
             width: 100%;
@@ -28,19 +33,25 @@
             margin: 20px 0; /* Vertical spacing */
             padding: 20px;
             background-color: rgb(231, 198, 132);
-            border-radius: 20px;
+            border-radius: 40px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            font-family: 'Bradley Habd';
+            font-family: 'BradleyHandITC', cursive;
             text-align: center;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
             box-sizing: border-box; /* Ensure padding doesn't expand width */
         }
         .header {
-            /* font-size: 2.5em; */
+            margin-top: 30px;
+            padding-right: 120px;
+            font-size: 32px;
             font-weight: bold;
             color: #32CD32;
         }
         .subheader {
-            /* font-size: 2em; */
+            margin-bottom: 30px;
+            padding-left: 70px;
+            font-size: 32px;
+            font-weight: bold;
             color: #32CD32;
         }
         .video {
@@ -50,7 +61,7 @@
             /* padding: 20px; */
             margin: 10px 0; /* Space between sections */
             /* height: auto; Maintain aspect ratio */
-            border-radius: 20px; /* Match card's rounded corners */
+            border-radius: 40px; /* Match card's rounded corners */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
         }
     </style>
